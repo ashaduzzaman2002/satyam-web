@@ -23,7 +23,7 @@ const Navbar = () => {
         {/* ---- Logo ---- */}
         <Link
           onClick={() => setActiveLink('/')}
-          href="/"
+          to="/"
           className="flex items-center col-span-2 w-full xl:pl-20 lg:pl-10"
         >
           <img src={'/images/logo.svg'} className="object-contain w-24 " alt="Logo" />
@@ -93,7 +93,7 @@ const Navbar = () => {
                   className={`font-medium ${Style.navLink} ${
                     activeLink === '/' && Style.active
                   }`}
-                  href="/"
+                  to="/"
                 >
                   Home
                 </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
                   className={`font-medium ${Style.navLink} ${
                     activeLink === '/about-us' && Style.active
                   } `}
-                  href="/about-us"
+                  to="/about-us"
                 >
                   About Us
                 </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
                   className={`font-medium ${Style.navLink} ${
                     activeLink === '/media' && Style.active
                   }`}
-                  href="/media"
+                  to="/media"
                 >
                   Media
                 </Link>
@@ -126,7 +126,7 @@ const Navbar = () => {
                   className={`font-medium ${Style.navLink} ${
                     activeLink === '/recent-work' && Style.active
                   }`}
-                  href="/recent-work"
+                  to="/recent-work"
                 >
                   Recent Work
                 </Link>
@@ -137,7 +137,7 @@ const Navbar = () => {
                   className={`font-medium ${Style.navLink} ${
                     activeLink === '/contact-us' && Style.active
                   }`}
-                  href="/contact-us"
+                  to="/contact-us"
                 >
                   Contact Us
                 </Link>
@@ -218,7 +218,7 @@ const Navbar = () => {
                 className={`font-medium uppercase ${Style.navLink} ${
                   activeLink === '/' && Style.active
                 }`}
-                href="/"
+                to="/"
               >
                 Home
               </Link>
@@ -229,7 +229,7 @@ const Navbar = () => {
                 className={`font-medium uppercase ${Style.navLink} ${
                   activeLink === '/about-us' && Style.active
                 } `}
-                href="/about-us"
+                to="/about-us"
               >
                 About Us
               </Link>
@@ -240,7 +240,7 @@ const Navbar = () => {
                 className={`font-medium uppercase ${Style.navLink} ${
                   activeLink === '/media' && Style.active
                 }`}
-                href="/media"
+                to="/media"
               >
                 Media
               </Link>
@@ -251,7 +251,7 @@ const Navbar = () => {
                 className={`font-medium uppercase ${Style.navLink} ${
                   activeLink === '/recent-work' && Style.active
                 }`}
-                href="/recent-work"
+                to="/recent-work"
               >
                 Recent Work
               </Link>
@@ -262,7 +262,7 @@ const Navbar = () => {
                 className={`font-medium uppercase ${Style.navLink} ${
                   activeLink === '/contact-us' && Style.active
                 }`}
-                href="/contact-us"
+                to="/contact-us"
               >
                 Contact Us
               </Link>

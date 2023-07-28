@@ -1,20 +1,15 @@
 import React from 'react';
-import Image from 'next/image';
 import Style from './footer.module.css';
-import Logo from '../../../public/assets/logo.svg';
-import MobileIcon from '../../../public/assets/mobile-icon.svg';
-import MailIcon from '../../../public/assets/mail-icon.svg';
-import LocationIcon from '../../../public/assets/location-icon.svg';
-import TimeIcon from '../../../public/assets/time-icon.svg';
+
 
 const Footer = () => {
   return (
     <footer
       className={`${(Style.footer, Style.footer_container)} px-4 md:px-10 xl:px-20 pt-6 lg:pt-16`}
     >
-      <div className="footer_up mb-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-between md:py-10, gap-10 ">
+      <div className="footer_up max-w-[1440px] mx-auto mb-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-between md:py-10, gap-10 ">
         <div className="col-span-1 md:col-span-2 lg:col-span-1  w-full footer_up_1 flex flex-col gap-4 items-center ">
-          <Image src={Logo} className="object-contain w-60 lg:mr-auto" alt="logo" />
+          <img src='/images/logo.svg' className="object-contain w-60 lg:mr-auto" alt="logo" />
           <div className="flex justify-between gap-2 mt-2 xl:hidden w-3/4 md:w-1/3 lg:w-3/4 max-w-sm">
             <div className="w-9 h-9 rounded-full flex justify-center items-center bg-white bg-opacity-10">
               <svg
@@ -81,22 +76,22 @@ const Footer = () => {
         <div className="col-span-1 w-fullfooter_up_2 flex flex-col gap-3 md:gap-6">
           <h2 className="text-3xl">Office</h2>
           <div className="flex gap-3">
-            <Image src={MobileIcon} alt='mobile icon' />
+            <img src='/images/mobile-icon.svg' alt='mobile icon' />
             <p className={`${Style.text_color}`}>+91 79 4000 8386</p>
           </div>
           <div className="flex gap-3">
-            <Image src={MailIcon} alt='mail icon' />
+            <img src='/images/mail-icon.svg' alt='mail icon' />
             <p className={`${Style.text_color}`}>Info@satyamdevelopers.com</p>
           </div>
           <div className="flex gap-3">
-            <Image src={LocationIcon} alt='location icon' />
+            <img src='/images/location-icon.svg' alt='location icon' />
             <p className={`${Style.text_color}`}>
               2231 Redbud Drive <br />
               Whitestone, NY 11357
             </p>
           </div>
           <div className="flex gap-3">
-            <Image src={TimeIcon} alt='time icon' />
+            <img src='/images/time-icon.svg' alt='time icon' />
             <p className={`${Style.text_color}`}>
               Mon – Fri: 9 AM – 7 PM <br />
               Sat – Sun: Closed
@@ -195,7 +190,7 @@ const Footer = () => {
       </div>
       <hr />
 
-      <div className="footer_down py-4 px-5 md:px-0">
+      <div className="footer_down max-w-[1440px] mx-auto py-4 px-5 md:px-0">
         <p className={`${Style.text_color} text-sm`}>
           © Copyright by Satyam Developers – All rights reserved
         </p>

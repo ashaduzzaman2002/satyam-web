@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../../layout/Layout'
-import {Slider} from '../../components'
+import {About, Slider} from '../../components'
 
 const Home = () => {
     const slides = [
@@ -56,7 +56,7 @@ const Home = () => {
       <div className='hero'>
         <Slider slides={slides} />
       </div>
-      {/* <About /> */}
+      <About />
       {/* <div className="mb-6 lg:mb-20">
         <Media media={media} />
         <div className="viewmore -mt-8">

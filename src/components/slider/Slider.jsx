@@ -23,9 +23,9 @@ const Slider = ({ slides }) => {
         style={slideStyle(slide)}
       >
         <div
-          className={`col-span-2 w-full relative flex items-center justify-start`}
+          className={`max-w-[1440px] mx-auto col-span-2 w-full relative flex items-center justify-start`}
         >
-          <div className="opacity-10 py-4 h-full ml-5 lg:ml-20 absolute z-0 flex items-center flex-col">
+          <div className="opacity-10 py-4 h-full ml-5 md:ml-10 absolute z-0 flex items-center flex-col">
             <div className={`h-1/2`}>
               <svg
                 width="100%"
@@ -58,7 +58,7 @@ const Slider = ({ slides }) => {
           </div>
 
           <div
-            className={`w-full h-full  relative z-10 flex py-10 gap-2 px-4 md:px-10 xl:px-20 text-white`}
+            className={`w-full h-full  relative z-10 flex py-10 gap-2 px-4 md:px-10 text-white`}
           >
             <div className="h-[96px] lg:h-1/2 grid grid-rows-3 lg:grid-row-5 gap-5 lg:gap-11">
               <div className=" row-span-2 lg:row-span-3">

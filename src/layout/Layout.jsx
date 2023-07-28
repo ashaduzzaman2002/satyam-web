@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Navbar } from "../components";
+import { Footer, Navbar } from "../components";
 
 const Layout = ({ children, title }) => {
   return (
@@ -9,7 +9,8 @@ const Layout = ({ children, title }) => {
         <title>{title}</title>
       </Helmet>
       <Navbar />
-      {children}
+        {children}
+      <Footer />
     </>
   );
 };
