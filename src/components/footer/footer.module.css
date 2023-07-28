@@ -1,0 +1,17 @@
+
+.footer_container{
+    color: #fff;
+    background: rgba(34, 34, 34, 1);
+}
+
+.text_color {
+    color: rgba(164, 164, 164, 1);
+}
+
+/* -------------- MEDIA QUERY (FOR MEDIUM DEVICES) ---------------- */
+@media screen and (max-width: 1024px) {
+}
+
+/* -------------- MEDIA QUERY (FOR SMALL DEVICES) ---------------- */
+@media screen and (max-width: 600px) {
+}

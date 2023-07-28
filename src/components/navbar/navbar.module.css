@@ -1,0 +1,49 @@
+
+
+.navContact {
+  color: #e3e3e3;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #ff7100;
+  border-radius: 5px;
+}
+
+.navMenu {
+  background-color: #f4f4f4;
+  max-width: 1168px !important;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 3% 100%);
+}
+
+.navLink {
+  font-size: 18px;
+  line-height: normal;
+  position: relative;
+
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 1.8rem;
+    width: 6px;
+    height: 6px;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    border-radius: 50%;
+    right: 50%;
+    transform: translate(50%);
+    transition: all 0.3s ease-in-out;
+  }
+
+.active {
+  color: #ff7100 !important;
+  font-weight: 600 !important;
+}
+
+.active::after {
+  background-color: #ff7100;
+}
