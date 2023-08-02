@@ -9,7 +9,7 @@ const Slider = ({ slides }) => {
   const [swiper, setSwiper] = useState(null);
 
   const slideStyle = (slide) => ({
-    backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(${slide.bg})`,
+    backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${slide.bg})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -18,47 +18,15 @@ const Slider = ({ slides }) => {
   const renderSlides = () => {
     return slides.map((slide, index) => (
       <SwiperSlide
-        className="h-full w-full grid grid-cols-2 items-center justify-center"
+        className="h-full w-full grid grid-cols-2 items-center justify-center pt-[130px]"
         key={index}
         style={slideStyle(slide)}
       >
         <div
-          className={`max-w-[1440px] mx-auto col-span-2 w-full relative flex items-center justify-start`}
+          className={`max-w-7xl h-full mx-auto col-span-2 flex items-center justify-start`}
         >
-          <div className="opacity-10 py-4 h-full ml-5 md:ml-10 absolute z-0 flex items-center flex-col">
-            <div className={`h-1/2`}>
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="0 0 479 274"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M122.673 121.804C205.187 59.0934 337.209 39.2899 396.619 39.2899C475.832 47.2112 460.43 106.401 442.827 135.006C448.108 132.366 453.829 125.105 456.029 121.804L472.532 92.099C491.015 49.8518 464.831 26.0877 449.428 19.4865C420.383 -4.27749 351.511 -1.41701 320.706 2.98374C238.192 9.585 132.574 62.394 99.5687 88.7983C28.2766 136.326 -2.74883 194.416 0.552229 217.52C-2.08822 267.689 80.8656 275.83 122.673 273.63C17.0547 268.349 28.0565 220.821 46.7597 197.717C56.6612 177.914 99.5687 138.307 122.673 121.804Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-
-            <div className={`h-1/2`}>
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="0 0 479 274"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M356.532 152.196C274.018 214.907 141.995 234.71 82.5852 234.71C3.37173 226.789 18.7744 167.599 36.3773 138.994C31.0964 141.634 25.3754 148.895 23.175 152.196L6.67224 181.901C-11.8109 224.148 14.3736 247.912 29.7762 254.513C58.8211 278.277 127.693 275.417 158.498 271.016C241.012 264.415 346.63 211.606 379.636 185.202C450.928 137.674 481.953 79.5836 478.652 56.4799C481.292 6.31137 398.339 -1.83002 356.532 0.370361C462.15 5.65128 451.148 53.1793 432.445 76.2832C422.543 96.0865 379.636 135.693 356.532 152.196Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div>
-
           <div
-            className={`w-full h-full  relative z-10 flex py-10 gap-2 px-4 md:px-10 text-white`}
+            className={`w-full h-full  relative z-10 flex py-10 gap-2 px-4 text-white`}
           >
             <div className="h-[96px] lg:h-1/2 grid grid-rows-3 lg:grid-row-5 gap-5 lg:gap-11">
               <div className=" row-span-2 lg:row-span-3">
@@ -125,7 +93,7 @@ const Slider = ({ slides }) => {
   };
 
   return (
-    <div className=" relative h-full">
+    <div className=" relative h-[75vh]">
       <Swiper
         className="h-full"
         onSwiper={setSwiper}
@@ -143,7 +111,7 @@ const Slider = ({ slides }) => {
 
       {/* Arrow */}
       <div
-        className={`absolute bottom-5 lg:right-10 xl:right-20 hidden lg:flex gap-4 z-10`}
+        className={`absolute bottom-5 lg:right-10 xl:right-32 hidden lg:flex gap-4 z-10`}
       >
         <div
           className={`w-12 h-12 flex items-center justify-center bg-white`}

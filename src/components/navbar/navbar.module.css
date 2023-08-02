@@ -6,15 +6,9 @@
   font-size: 18px;
 }
 
-.btn {
-  background-color: #ff7100;
-  border-radius: 5px;
-}
-
 .navMenu {
-  background-color: #f4f4f4;
-  max-width: 1168px !important;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 3% 100%);
+  background-color: rgba(241, 241, 241, 0.70);
+ border-bottom-left-radius: 100px;
 }
 
 .navLink {
@@ -40,7 +34,6 @@
   }
 
 .active {
-  color: #ff7100 !important;
   font-weight: 600 !important;
 }
 

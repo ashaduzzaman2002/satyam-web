@@ -5,7 +5,7 @@ import {About, Slider} from '../../components'
 const Home = () => {
     const slides = [
         {
-          bg: "/images/home-banner.png",
+          bg: "/images/office.png",
           subHeading: "Let's construct a",
           heading1: "better tomorrow for ",
           heading2: "future generations",
@@ -13,7 +13,7 @@ const Home = () => {
         },
     
         {
-          bg: "/images/home-banner.png",
+          bg: "/images/office.png",
           subHeading: "Let's construct a",
           heading1: "better tomorrow for ",
           heading2: "future generations",
@@ -21,7 +21,7 @@ const Home = () => {
         },
     
         {
-          bg: "/images/home-banner.png",
+          bg: "/images/office.png",
           subHeading: "Let's construct a",
           heading1: "better tomorrow for ",
           heading2: "future generations",
@@ -53,7 +53,7 @@ const Home = () => {
   return (
     <Layout title={'Satyam'}>
         <main className="">
-      <div className='hero'>
+      <div>
         <Slider slides={slides} />
       </div>
       <About />

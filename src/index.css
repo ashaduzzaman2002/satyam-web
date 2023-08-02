@@ -18,7 +18,9 @@
 body{
   overflow-x: hidden;
   font-family: 'Taviraj', serif;
+  scroll-behavior: smooth;
 }
+
 
 
 
