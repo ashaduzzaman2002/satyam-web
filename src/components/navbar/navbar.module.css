@@ -40,3 +40,14 @@
 .active::after {
   background-color: #ff7100;
 }
+
+
+@media screen and (min-width: 1306px) {
+  .navMenu {
+    padding-right: calc((100vw - 1265px)/2);
+  }
+
+  .navBrand {
+    padding-left: calc((100vw - 1265px)/2);
+  }
+}

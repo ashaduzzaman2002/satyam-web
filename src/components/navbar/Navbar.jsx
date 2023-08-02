@@ -86,13 +86,13 @@ const Navbar = () => {
 
 
       </div>
-      <div className={` grid grid-cols-5 pl-4 xl:pl-[4vw] gap-2`}>
+      <div className={`grid grid-cols-5 pl-4 xl:pl-[2.5vw] gap-2 ${Style.navBrand}`}>
 
         {/* ---- Logo ---- */}
         <Link
           onClick={() => setActiveLink('/')}
           to="/"
-          className="flex items-center col-span-1 w-full xl:pl-20 lg:pl-10"
+          className={`flex items-center col-span-1 w-full`}
         >
           <img src={'/images/logo.svg'} className="object-contain w-24 lg:hidden" alt="Logo" />
           <img src={'/images/logo-2.svg'} className="object-contain w-24 hidden lg:block pt-2" alt="Logo" />
@@ -108,8 +108,8 @@ const Navbar = () => {
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
+                width="20"
+                height="20"
                 viewBox="0 0 20 20"
                 fill="none"
               >
@@ -130,8 +130,8 @@ const Navbar = () => {
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
+                width="20"
+                height="20"
                 viewBox="0 0 20 20"
                 fill="none"
               >
@@ -154,7 +154,7 @@ const Navbar = () => {
 
           {/* ---- Menu ---- */}
           <div
-            className={`hidden lg:flex items-center py-2  justify-between xl:gap-28 gap-6 pr-4 xl:pr-[8.7vw] pl-4 lg:pl-16 xl:pl-[4vw] max-w-[1090px] ms-auto ${Style.navMenu}`}
+            className={`hidden lg:flex items-center py-2  justify-between xl:gap-28 gap-6 pr-4 xl:pr-[2vw] pl-4 lg:pl-16 xl:pl-[4vw] ms-auto ${Style.navMenu}`}
           >
             <ul className="flex justify-between gap-10">
               <li>
