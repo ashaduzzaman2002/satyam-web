@@ -105,30 +105,45 @@ const RecentWork = () => {
 
       {/* Desktop view */}
       <div className='hidden lg:grid grid-cols-3 place-content-center gap-6 my-8  w-full '>
-        {/* {
-          Data.map((item, i) => (
-            <Cards key={i} item={item} />
-          ))
-        } */}
+
 
         <div className=' grid-rows-2 gap-6'>
-          <div className='h-[395px] rounded-xl overflow-hidden'>
-            <img className='w-full h-full' src={Data[0].image} alt="" />
+          <div className='h-[395px] rounded-xl overflow-hidden relative'>
+            <img className='w-full h-full object-cover' src={Data[0].image} alt="" />
+            <div className="text_block absolute z-10 top-0 flex flex-col w-full h-full justify-end ml-3 pb-4 text-2xl">
+              <div className="title text-slate-50">{Data[0].title}</div>
+              <div className="read_more text-xl flex gap-4 items-center">
+                <h2 className='text-[#FF7100]'>Read More</h2>
+
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clipPath="url(#clip0_16_8163)">
+                    <path d="M19.7709 9.44699L19.7702 9.44625L15.688 5.38375C15.3822 5.07941 14.8875 5.08054 14.5831 5.3864C14.2787 5.69222 14.2799 6.18687 14.5857 6.49125L17.3265 9.21875H0.78125C0.349766 9.21875 0 9.56851 0 10C0 10.4315 0.349766 10.7812 0.78125 10.7812H17.3265L14.5857 13.5087C14.2799 13.8131 14.2788 14.3078 14.5831 14.6136C14.8875 14.9195 15.3822 14.9205 15.688 14.6162L19.7702 10.5537L19.7709 10.553C20.0769 10.2476 20.0759 9.75136 19.7709 9.44699Z" fill="#FF7100" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_16_8163">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+              </div>
+            </div>
+
           </div>
           <div className='row-span-1 mt-6 h-[395px] rounded-xl overflow-hidden'>
-          <img className='w-full h-full' src={Data[1].image} alt="" />
+            <img className='w-full h-full object-cover' src={Data[1].image} alt="" />
           </div>
         </div>
 
         <div className='grid-rows-3 gap-6'>
           <div className='row-span-1 h-[212px] rounded-xl overflow-hidden'>
-          <img className='w-full h-full object-cover' src={Data[2].image} alt="" />
+            <img className='w-full h-full object-cover' src={Data[2].image} alt="" />
           </div>
           <div className=' row-span-1 h-[365px] rounded-xl mt-3 overflow-hidden'>
-          <img className='w-full h-full object-cover' src={Data[3].image} alt="" />
+            <img className='w-full h-full object-cover' src={Data[3].image} alt="" />
           </div>
           <div className='bg-red-500 row-span-1 h-[212px] rounded-xl mt-3 overflow-hidden'>
-          <img className='w-full h-full object-cover' src={Data[4].image} alt="" />
+            <img className='w-full h-full object-cover' src={Data[4].image} alt="" />
           </div>
         </div>
 
@@ -137,7 +152,7 @@ const RecentWork = () => {
             <img className='w-full h-full object-cover' src={Data[6].image} alt="" />
           </div>
           <div className='row-span-1 mt-6 h-[395px] rounded-xl overflow-hidden'>
-          <img className='w-full h-full' src={Data[5].image} alt="" />
+            <img className='w-full h-full object-cover' src={Data[5].image} alt="" />
           </div>
         </div>
 
