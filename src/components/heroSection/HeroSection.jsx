@@ -39,9 +39,15 @@ const HeroSection = ({ title }) => {
                     </div>
                 </div>
 
+
                 <div className='w-full'>
-                    <img className=' w-[160px] h-[160px] lg:w-[300px] lg:h-[300px] rounded-full ms-auto' src="/images/civil.png" alt="" />
-                </div>
+            <img className='w-[160px] lg:w-[300px] ms-auto' src="/images/civil.png" alt="" />
+          </div>
+
+                {/* <div className='w-full'>
+                    <img className='w-[160px] h-[160px] aspect-none lg:w-[300px] lg:h-auto rounded-full ms-auto' src="/images/civil.png" alt="" />
+                </div> */}
+
 
             </div>
         </div>

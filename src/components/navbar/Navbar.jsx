@@ -235,7 +235,7 @@ const Navbar = () => {
 
           {/* ---- Bar ---- */}
           <div className="flex lg:hidden justify-end">
-            <button onClick={() => setToggle(!toggle)}>
+            <button  aria-label="Toggle Menu" onClick={() => setToggle(!toggle)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"

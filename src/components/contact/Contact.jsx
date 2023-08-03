@@ -8,8 +8,8 @@ const Contact = () => {
       <div className="heading flex flex-col justify-start items-center py-6">
         <h1 className='text-4xl font-semibold'>Contact Us</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="106" height="2" viewBox="0 0 106 2" fill="none">
-        <line y1="1" x2="63" y2="1" stroke="#FF7100" stroke-width="2"/>
-        <line x1="78" y1="1" x2="106" y2="1" stroke="#FF7100" stroke-width="2"/>
+        <line y1="1" x2="63" y2="1" stroke="#FF7100" strokeWidth="2"/>
+        <line x1="78" y1="1" x2="106" y2="1" stroke="#FF7100" strokeWidth="2"/>
       </svg>
       </div>
       <div
@@ -21,13 +21,13 @@ const Contact = () => {
           {/* small left box bg svg start */}
           <div className="absolute right-8 bottom-44 md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="58" height="59" viewBox="0 0 58 59" fill="none">
-              <ellipse cx="29" cy="29.5" rx="29" ry="29.5" fill="#FFF9F9" fill-opacity="0.13"/>
+              <ellipse cx="29" cy="29.5" rx="29" ry="29.5" fill="#FFF9F9" fillOpacity="0.13"/>
             </svg>
           </div>
 
           <div className="absolute right-0 bottom-28 md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="65" height="114" viewBox="0 0 65 114" fill="none">
-              <ellipse cx="56.5" cy="57" rx="56.5" ry="57" fill="white" fill-opacity="0.12"/>
+              <ellipse cx="56.5" cy="57" rx="56.5" ry="57" fill="white" fillOpacity="0.12"/>
             </svg>
           </div>
           {/* small left box bg svg end */}
@@ -35,13 +35,13 @@ const Contact = () => {
           {/* md left box bg svg end */}
           <div className="absolute right-[35%] bottom-[20%] hidden md:block">
             <svg xmlns="http://www.w3.org/2000/svg" width="138" height="138" viewBox="0 0 138 138" fill="none">
-              <circle cx="69" cy="69" r="69" fill="#FFF9F9" fill-opacity="0.13"/>
+              <circle cx="69" cy="69" r="69" fill="#FFF9F9" fillOpacity="0.13"/>
             </svg>
           </div>
 
           <div className="absolute hidden md:block right-0 bottom-0">
             <svg width="243" height="218" viewBox="0 0 243 218" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="134.5" cy="134.5" r="134.5" fill="white" fill-opacity="0.12"/>
+              <circle cx="134.5" cy="134.5" r="134.5" fill="white" fillOpacity="0.12"/>
             </svg>
           </div>
           {/* md left box bg svg end */}

@@ -30,12 +30,12 @@ const Slider = ({ slides }) => {
             <div className='max-w-[638px] max-h-[454px] h-full lg:flex items-end hidden'>
               <svg className='mb-[-10px]' xmlns="http://www.w3.org/2000/svg" width="15" height="203" viewBox="0 0 15 203" fill="none">
                 <g filter="url(#filter0_d_391_428)">
-                  <line y1="-2.5" x2="140" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 0)" stroke="#FF7100" stroke-width="5" />
-                  <line y1="-2.5" x2="38" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 155)" stroke="#FF7100" stroke-width="5" />
+                  <line y1="-2.5" x2="140" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 0)" stroke="#FF7100" strokeWidth="5" />
+                  <line y1="-2.5" x2="38" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 155)" stroke="#FF7100" strokeWidth="5" />
                 </g>
                 <defs>
-                  <filter id="filter0_d_391_428" x="0" y="0" width="15" height="203" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <filter id="filter0_d_391_428" x="0" y="0" width="15" height="203" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                     <feOffset dy="5" />
                     <feGaussianBlur stdDeviation="2.5" />
@@ -92,12 +92,12 @@ const Slider = ({ slides }) => {
             <div className='max-w-[638px] max-h-[454px] h-full lg:flex items-start hidden'>
               <svg className='mb-[-10px]' xmlns="http://www.w3.org/2000/svg" width="15" height="203" viewBox="0 0 15 203" fill="none">
                 <g filter="url(#filter0_d_391_428)">
-                  <line y1="-2.5" x2="140" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 0)" stroke="#FF7100" stroke-width="5" />
-                  <line y1="-2.5" x2="38" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 155)" stroke="#FF7100" stroke-width="5" />
+                  <line y1="-2.5" x2="140" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 0)" stroke="#FF7100" strokeWidth="5" />
+                  <line y1="-2.5" x2="38" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 155)" stroke="#FF7100" strokeWidth="5" />
                 </g>
                 <defs>
-                  <filter id="filter0_d_391_428" x="0" y="0" width="15" height="203" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <filter id="filter0_d_391_428" x="0" y="0" width="15" height="203" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                     <feOffset dy="5" />
                     <feGaussianBlur stdDeviation="2.5" />
@@ -111,9 +111,13 @@ const Slider = ({ slides }) => {
             </div>
           </div>
 
+
           <div className='w-full'>
-            <img className=' w-[160px] h-[160px] lg:w-[400px] lg:h-[400px] rounded-full ms-auto' src="/images/civil.png" alt="" />
+            <img className='w-[160px] lg:w-[300px] ms-auto' src="/images/civil.png" alt="" />
           </div>
+          {/* <div className='w-full'>
+            <img className='w-[160px] h-[160px] aspect-none lg:w-[300px] lg:h-auto rounded-full ms-auto' src="/images/civil.png" alt="" />
+          </div> */}
         </div>
 
       </SwiperSlide>
@@ -151,7 +155,7 @@ const Slider = ({ slides }) => {
         modules={[Autoplay]}
       >
         {renderSlides()}
-        
+
       </Swiper>
 
       {/* Arrow */}
