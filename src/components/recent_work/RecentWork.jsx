@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import Style from './recentWork.module.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { Navigation } from 'swiper';

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import './slider.css'
+
+import { Autoplay } from 'swiper/modules';
 
 
 const Slider = ({ slides }) => {
@@ -72,7 +72,7 @@ const Slider = ({ slides }) => {
                   Get A Quote
                 </span>
                 <svg
-                className='w-4 h-4 md:w-[22px] md:h-[22px] '
+                  className='w-4 h-4 md:w-[22px] md:h-[22px] '
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
@@ -112,7 +112,7 @@ const Slider = ({ slides }) => {
           </div>
 
           <div className='w-full'>
-            <img className=' w-[160px] h-[160px] lg:w-[400px] lg:h-[400px] rounded-full ms-auto'    src="/images/civil.png" alt="" />
+            <img className=' w-[160px] h-[160px] lg:w-[400px] lg:h-[400px] rounded-full ms-auto' src="/images/civil.png" alt="" />
           </div>
         </div>
 
@@ -139,20 +139,31 @@ const Slider = ({ slides }) => {
         onSwiper={setSwiper}
         spaceBetween={0}
         slidesPerView={1}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+
+
+        centeredSlides={true}
+
+        modules={[Autoplay]}
       >
         {renderSlides()}
+        
       </Swiper>
 
       {/* Arrow */}
       <div
-        className={`absolute bottom-5 max-w-7xl w-full  flex lg:justify-end px-4 gap-4 z-10`} style={{left: '50%', transform: 'translate(-50%)'}}
+        className={`absolute bottom-5 max-w-7xl w-full  flex lg:justify-end px-4 gap-4 z-10`} style={{ left: '50%', transform: 'translate(-50%)' }}
       >
         <div
           className={` w-8 h-8 lg:w-12 lg:h-12 rounded-[5px] lg:rounded-none  flex items-center justify-center bg-white`}
           onClick={handlePrev}
         >
           <svg
-          className='w-5 h-5 lg:w-8 lg:h-8'
+            className='w-5 h-5 lg:w-8 lg:h-8'
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
@@ -172,7 +183,7 @@ const Slider = ({ slides }) => {
           onClick={handleNext}
         >
           <svg
-          className='w-5 h-5 lg:w-8 lg:h-8'
+            className='w-5 h-5 lg:w-8 lg:h-8'
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
