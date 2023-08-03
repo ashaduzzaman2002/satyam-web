@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import './slider.css'
 
 
 const Slider = ({ slides }) => {
@@ -18,47 +19,60 @@ const Slider = ({ slides }) => {
   const renderSlides = () => {
     return slides.map((slide, index) => (
       <SwiperSlide
-        className="h-full w-full grid grid-cols-2 items-center justify-center pt-[130px]"
+        className="h-full w-full grid grid-cols-2 items-center justify-center slider-card-outer pt-[130px]"
         key={index}
         style={slideStyle(slide)}
       >
         <div
-          className={`max-w-7xl h-full mx-auto col-span-2 flex items-center justify-start`}
+          className={`max-w-7xl h-full px-4 mx-auto col-span-2 gap-5  flex flex-col lg:flex-row items-center justify-bewteen`}
         >
-          <div
-            className={`w-full h-full  relative z-10 flex py-10 gap-2 px-4 text-white`}
-          >
-            <div className="h-[96px] lg:h-1/2 grid grid-rows-3 lg:grid-row-5 gap-5 lg:gap-11">
-              <div className=" row-span-2 lg:row-span-3">
-                <div className="w-[1px] h-full bg-[#FF7100] "></div>
-              </div>
-
-              <div className=" row-span-1 lg:row-span-2">
-                <div className="w-[1px] h-full bg-[#FF7100] "></div>
-              </div>
+          <div className='w-full lg:h-full h-[40vh]  flex lg:items-center'>
+            <div className='max-w-[638px] max-h-[454px] h-full lg:flex items-end hidden'>
+              <svg className='mb-[-10px]' xmlns="http://www.w3.org/2000/svg" width="15" height="203" viewBox="0 0 15 203" fill="none">
+                <g filter="url(#filter0_d_391_428)">
+                  <line y1="-2.5" x2="140" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 0)" stroke="#FF7100" stroke-width="5" />
+                  <line y1="-2.5" x2="38" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 155)" stroke="#FF7100" stroke-width="5" />
+                </g>
+                <defs>
+                  <filter id="filter0_d_391_428" x="0" y="0" width="15" height="203" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="5" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_428" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_428" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
             </div>
 
-            <div className="h-full max-w-[450px] md:max-w-[60%]">
-              <h3 className="text-[#FF7100] text-xl leading-[1.08rem] pb-2 font-[15px] md:font-medium">
+            <div
+              className={`max-w-[95%] md:max-w-[70%] max-h-full lg:max-w-[638px] lg:max-h-[454px] w-full h-full md:pl-9 md:pr-6 flex flex-col justify-center py-10 gap-2 px-5 slider-card`}
+            >
+
+              <h3 className="text-[#FF7100] lg:text-xl leading-[1.08rem] pb-2 text-[13px] md:font-medium">
                 {slide.subHeading}
               </h3>
-              <h1 className="text-[24px] lg:text-[57px] font-semibold capitalize leading-normal">
+              <h1 className="text-[20px] md:text-[24px] lg:text-[50px] font-semibold capitalize leading-normal lg:leading-[60px]">
                 {slide.heading1}
               </h1>
-              <h1 className="text-[24px] lg:text-[57px] pt-2 lg:pt-0 font-semibold capitalize leading-normal">
+              <h1 className="text-[20px] md:text-[24px] lg:text-[50px] md:pt-2 lg:pt-0 font-semibold capitalize lg:leading-[60px]">
                 {slide.heading2}
               </h1>
-              <p className="lg:text-lg text-[13px] font-normal leading-[17px] capitalize lg:w-4/5 xl:w-3/4">
+              <p className="lg:text-lg md:text-[13px] text[11px] font-normal leading-[20px] capitalize ">
                 {slide.desc}
               </p>
 
               <button
-                className={`flex gap-2 text-white px-4 py-2 items-center w-52 justify-center mt-8 hero-btn`}
+                className={`flex gap-2 text-white px-4 py-2 items-center w-36 md:w-52 justify-center mt-4 hero-btn`}
               >
-                <span className="text-white text-sm font-semibold">
+                <span className="text-white text-[13px] md:text-sm font-semibold">
                   Get A Quote
                 </span>
                 <svg
+                className='w-4 h-4 md:w-[22px] md:h-[22px] '
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
@@ -74,8 +88,34 @@ const Slider = ({ slides }) => {
                 </svg>
               </button>
             </div>
+
+            <div className='max-w-[638px] max-h-[454px] h-full lg:flex items-start hidden'>
+              <svg className='mb-[-10px]' xmlns="http://www.w3.org/2000/svg" width="15" height="203" viewBox="0 0 15 203" fill="none">
+                <g filter="url(#filter0_d_391_428)">
+                  <line y1="-2.5" x2="140" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 0)" stroke="#FF7100" stroke-width="5" />
+                  <line y1="-2.5" x2="38" y2="-2.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 155)" stroke="#FF7100" stroke-width="5" />
+                </g>
+                <defs>
+                  <filter id="filter0_d_391_428" x="0" y="0" width="15" height="203" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="5" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_428" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_428" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <div className='w-full'>
+            <img className=' w-[160px] h-[160px] lg:w-[400px] lg:h-[400px] rounded-full ms-auto'    src="/images/civil.png" alt="" />
           </div>
         </div>
+
       </SwiperSlide>
     ));
   };
@@ -93,31 +133,26 @@ const Slider = ({ slides }) => {
   };
 
   return (
-    <div className=" relative h-[75vh]">
+    <div className=" relative h-[72vh] lg:h-[100vh]">
       <Swiper
         className="h-full"
         onSwiper={setSwiper}
         spaceBetween={0}
         slidesPerView={1}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }}
-
-        autoplay={{ delay: 1000 }}
       >
         {renderSlides()}
       </Swiper>
 
       {/* Arrow */}
       <div
-        className={`absolute bottom-5 lg:right-10 xl:right-32 hidden lg:flex gap-4 z-10`}
+        className={`absolute bottom-5 max-w-7xl w-full  flex lg:justify-end px-4 gap-4 z-10`} style={{left: '50%', transform: 'translate(-50%)'}}
       >
         <div
-          className={`w-12 h-12 flex items-center justify-center bg-white`}
+          className={` w-8 h-8 lg:w-12 lg:h-12 rounded-[5px] lg:rounded-none  flex items-center justify-center bg-white`}
           onClick={handlePrev}
         >
           <svg
+          className='w-5 h-5 lg:w-8 lg:h-8'
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
@@ -132,11 +167,12 @@ const Slider = ({ slides }) => {
         </div>
 
         <div
-          className={`w-12 h-12 flex items-center justify-center`}
+          className={`w-8 h-8 lg:w-12 lg:h-12 rounded-[5px] lg:rounded-none flex items-center justify-center`}
           style={{ backgroundColor: '#FF7100' }}
           onClick={handleNext}
         >
           <svg
+          className='w-5 h-5 lg:w-8 lg:h-8'
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
